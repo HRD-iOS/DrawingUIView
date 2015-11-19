@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LableTextDelegate <NSObject>
+
+@required
+-(void)setText:(NSString *)textTitle;
+
+@end
+
 @interface ViewController : UIViewController
-
-
+@property (nonatomic, weak) id<LableTextDelegate> delegate;
+@property (weak, nonatomic) UILabel* title;
 @end
 

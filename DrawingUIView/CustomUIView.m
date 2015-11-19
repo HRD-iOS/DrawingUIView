@@ -30,6 +30,8 @@ NSUInteger currentIndex;
     
 }
 
+
+
 -(void)handleTapFrom:(UITapGestureRecognizer *)recognizer{
     [self setNeedsDisplay];
 }
@@ -45,7 +47,7 @@ NSUInteger currentIndex;
         randomIndex = arc4random() % [arr count];
     }
     currentIndex = randomIndex;
-    NSLog(@"%d", randomIndex);
+    NSLog(@"%lu", (unsigned long)randomIndex);
     switch (randomIndex) {
         case 0:
             [self drawRectangle:ctr];
