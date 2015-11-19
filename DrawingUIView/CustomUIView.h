@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol CustomUIViewDelegate <NSObject>
+
+@required
+
+-(void)setText:(NSString *)textTitle;
+
+@end
+
 @interface CustomUIView : UIView
 
+@property (nonatomic, weak) id<CustomUIViewDelegate> delegate;
 @end

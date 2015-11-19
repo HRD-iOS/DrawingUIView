@@ -7,9 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "CustomUIView.h"
 
-@interface ViewController()<LableTextDelegate>
+@interface ViewController()
 
 @end
 
@@ -17,12 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
     CustomUIView *rect = [[CustomUIView alloc]initWithFrame:CGRectMake(50, 50, 90, 90)];
-    [self setText:@"asdf"];
-    [self.view addSubview:self.title];
+    rect.delegate = self;
     
+    
+    
+    [self setText:@"hello1"];
     [self.view addSubview:rect];
     }
 
@@ -31,8 +31,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark CustomUIViewController Delegate
 -(void)setText:(NSString *)textTitle{
-    self.title.text = textTitle;
+    NSLog(textTitle);
 }
+
+
 
 @end

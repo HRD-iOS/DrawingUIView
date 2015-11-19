@@ -7,16 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomUIView.h"
 
-@protocol LableTextDelegate <NSObject>
+@interface ViewController : UIViewController<CustomUIViewDelegate>
 
-@required
--(void)setText:(NSString *)textTitle;
-
-@end
-
-@interface ViewController : UIViewController
-@property (nonatomic, weak) id<LableTextDelegate> delegate;
-@property (weak, nonatomic) UILabel* title;
 @end
 
