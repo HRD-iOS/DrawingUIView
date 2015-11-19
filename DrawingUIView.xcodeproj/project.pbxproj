@@ -13,6 +13,7 @@
 		9AB318341BFDAFA00065BE0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB318321BFDAFA00065BE0B /* Main.storyboard */; };
 		9AB318361BFDAFA00065BE0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB318351BFDAFA00065BE0B /* Assets.xcassets */; };
 		9AB318391BFDAFA00065BE0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB318371BFDAFA00065BE0B /* LaunchScreen.storyboard */; };
+		9AB318421BFDB02C0065BE0B /* CustomUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB318411BFDB02C0065BE0B /* CustomUIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9AB318351BFDAFA00065BE0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB318381BFDAFA00065BE0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AB3183A1BFDAFA00065BE0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB318401BFDB02C0065BE0B /* CustomUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIView.h; sourceTree = "<group>"; };
+		9AB318411BFDB02C0065BE0B /* CustomUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				9AB318371BFDAFA00065BE0B /* LaunchScreen.storyboard */,
 				9AB3183A1BFDAFA00065BE0B /* Info.plist */,
 				9AB318291BFDAFA00065BE0B /* Supporting Files */,
+				9AB318401BFDB02C0065BE0B /* CustomUIView.h */,
+				9AB318411BFDB02C0065BE0B /* CustomUIView.m */,
 			);
 			path = DrawingUIView;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB318311BFDAFA00065BE0B /* ViewController.m in Sources */,
+				9AB318421BFDB02C0065BE0B /* CustomUIView.m in Sources */,
 				9AB3182E1BFDAFA00065BE0B /* AppDelegate.m in Sources */,
 				9AB3182B1BFDAFA00065BE0B /* main.m in Sources */,
 			);
